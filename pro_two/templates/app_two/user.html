@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Users</title>
+    <link rel="stylesheet" href="{% static "css\app_two.css"%}"/>
+  </head>
+  <body>
+    <h1>Connected CSS static to Users</h1>
+    <h2>User table ahead</h2>
+    <div class="usertable">
+      {% if users %}
+
+      <ol>
+      {% for u in users %}
+        <li>User Info
+          <ul>
+            <li>First Name: {{u.first_name}}</li>
+            <li>Last Name: {{u.last_name}}</li>
+            <li>Email: {{u.email}}</li>
+          </ul>
+        </li>
+      {% endfor %}
+    </ol>
+
+      {% else %}
+      <p>No users detected</p>
+      {% endif %}
+    </div>
+
+
+
+  </body>
+</html>
