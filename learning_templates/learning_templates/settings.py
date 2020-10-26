@@ -25,7 +25,9 @@ SECRET_KEY = 'zu^n(o#sblesl&s1dumm5#!q7@3xa)tga=7urf-_gr&sca2xnr'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    'spicyraccoon.pythonanywhere.com',
+]
 
 
 # Application definition
